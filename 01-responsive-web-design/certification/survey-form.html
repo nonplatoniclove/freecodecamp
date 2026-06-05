@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech Support & Warranty Care form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tech Support & Warranty Care</h1>
+      <p id="description">
+        If your device has a defect or is not working correctly, please fill out the form below. Our team will review your claim and get back to you within 2 hours.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form" method="POST" action="https://formspree.io/f/mqeoeklj">
+        <fieldset>
+          <legend>Form</legend>
+          
+          <div>
+            <label id="name-label" for="name">Full name (required):</label>
+            <input type="text" id="name" name="name" placeholder="e.g., John Doe" required size="20">
+          </div>
+          <div>
+            <label id="email-label" for="email">Email address (required):</label>
+            <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"/>
+          </div>
+
+          <div>
+            <label id="number-label" for="number">Order number (required):</label>
+            <input type="number" name="number" id="number" min="1" max="999999" placeholder="e.g., 10245" required />
+          </div>
+
+          <div>
+            <label for="dropdown">Issue Category</label>
+            <select name="issue" id="dropdown">
+              <option value="hardwaremalfunction">Hardware Malfunction</option>
+              <option value="glitch">Software / Connectivity Glitch</option>
+              <option value="missingaccessories">Missing Accessories</option>
+              <option value="cosmeticdamage">Cosmetic Damage</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="problem">Please describe the problem.</label>
+          </div>
+          <div>
+            <textarea cols="30" rows="10" name="problem" id="problem" placeholder="Describe your issue here..."></textarea>
+          </div>
+
+          <div>
+            <p>Is the original packaging preserved?</p>
+            <input id="yes-option" type="radio" name="packaging" value="yes" />
+            <label for="yes-option">Yes</label>
+            <input id="no-option" type="radio" name="packaging" value="no" />
+            <label for="no-option">No</label>
+          </div>
+
+          <div>
+            <p>Additional Confirmations</p>
+            
+            <input type="checkbox" id="privacy-agree" name="agreement" value="terms_accepted" required checked />
+            <label for="privacy-agree">I agree to the Terms of Service and Warranty Policy</label>
+            
+            <br>
+            
+            <input type="checkbox" id="data-backup" name="backup" value="data_backed_up" />
+            <label for="data-backup">I have backed up my personal data on the device</label>
+          </div>
+
+        </fieldset>
+
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
