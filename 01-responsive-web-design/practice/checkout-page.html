@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsTNCw3uE6czkulEsM02XqZaAvBveTtj0oYOGbOClpg&s" alt="Collector's Edition of an Old Book">
+        <h3>The Chronicles of Time (Collector's Edition)</h3>
+        <p>Price: <strong>$45.00</strong></p>
+    </section>
+
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            
+            <div>
+                <label for="card-name">
+                    Cardholder's name <span aria-hidden="true">*</span>
+                </label>
+                <input id="card-name" name="card-name" type="text" required>
+            </div>
+
+            <div>
+                <label for="card-number">
+                    Bank card number <span aria-hidden="true">*</span>
+                </label>
+                <input id="card-number" name="card-number" type="text" aria-describedby="card-number-help" required>
+                <p id="card-number-help">Please enter 16 digits of your card number without spaces or dashes.</p>
+            </div>
+
+            <button type="submit">Pay $45.00</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
